@@ -27,6 +27,48 @@ console.log("The result of this arithmetic is: " + result);
 const isUnder25 = n1 < 25 && n2 < 25 && n3 < 25 && n4 < 25;
 console.log("No number larger than 25: " + isUnder25);
 
+//====================PART TWO========================//
+// Declaratrions
+const tripDistance = 1500;
+const fuelBudget = 175;
+const fuelCost = 3;
+const fuelEfficiency55 = 30;
+const fuelEfficiency60 = 28;
+const fuelEfficiency75 = 23; 
+
+//Calculate the number of gallons of fuel needed for the entire trip per speed
+const tolGal55 = tripDistance / fuelEfficiency55;
+console.log("The number of gallons needed for the trip at 55 MPH: " + tolGal55);
+
+const tolGal60 = tripDistance / fuelEfficiency60;
+console.log("The number of gallons needed for the trip at 60 MPH: " + tolGal60);
+
+const tolGal75 = tripDistance / fuelEfficiency75;
+console.log(`The number of gallons needed for the trip at 75 MPH: ${tolGal75} `);
+
+//Will your budget be enough to cover the fuel expense?
+const fuelBudget55 = tolGal55 * fuelCost;
+const budgetEnough55 = fuelBudget55 <= fuelBudget;
+console.log("The fuel budget is at 55 MPH " + fuelBudget55 + " and is " + budgetEnough55);
+
+const fuelBudget60 = tolGal60 * fuelCost;
+const budgetEnough60 = fuelBudget60 <= fuelBudget;
+console.log("The fuel budget is at 60 MPH " + fuelBudget60 + " and is " + budgetEnough60);
+
+const fuelBudget75 = tolGal75 * fuelCost;
+const budgetEnough75 = fuelBudget75 <= fuelBudget;
+console.log("The fuel budget is at 75 MPH " + fuelBudget75 + " and is " + budgetEnough75);
+
+//How long will the trip take, in hours?
+const tripDuration55 = tripDistance / 55;
+console.log("The duration of trip at 55 MPH is: " + tripDuration55 + " hours");
+
+const tripDuration60 = tripDistance / 60;
+console.log("The duration of trip at 60 MPH is: " + tripDuration60 + " hours");
+
+const tripDuration75 = tripDistance / 75;
+console.log("The duration of trip at 75 MPH is: " + tripDuration75 + " hours");
+
 
 
 //**************************************************************************************************************/
